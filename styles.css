@@ -1,0 +1,492 @@
+/* ===========================
+   Horizon Website
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Inter,Arial,sans-serif;
+    background:#ffffff;
+    color:#2C2C2C;
+    overflow-x:hidden;
+}
+
+
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:22px 8%;
+
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(20px);
+
+    border-bottom:1px solid #f2f2f2;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo img{
+    width:42px;
+}
+
+.logo span{
+    font-size:24px;
+    font-weight:800;
+}
+
+nav{
+    display:flex;
+    gap:35px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#555;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#2C2C2C;
+}
+
+
+/* ===========================
+   Hero
+=========================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:130px 8% 60px;
+
+}
+
+.hero-content{
+    max-width:550px;
+}
+
+.hero h1{
+
+    font-size:72px;
+    line-height:82px;
+    font-weight:900;
+
+    margin-bottom:30px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+    line-height:36px;
+    color:#666;
+
+    margin-bottom:45px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+    gap:18px;
+
+}
+
+.primary-btn{
+
+    background:#2C2C2C;
+    color:white;
+
+    border:none;
+
+    padding:18px 40px;
+
+    border-radius:18px;
+
+    font-size:16px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.secondary-btn{
+
+    background:white;
+
+    border:1px solid #DDD;
+
+    padding:18px 40px;
+
+    border-radius:18px;
+
+    font-size:16px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.secondary-btn:hover{
+
+    background:#F7F7F7;
+
+}
+
+.hero-phone{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.hero-phone img{
+
+    width:360px;
+
+    animation:float 5s ease-in-out infinite;
+
+    filter:drop-shadow(0 25px 60px rgba(0,0,0,.15));
+
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+
+/* ===========================
+   Features
+=========================== */
+
+.features{
+
+    padding:120px 8%;
+
+    background:#FAFAFA;
+
+}
+
+.features h2{
+
+    text-align:center;
+
+    font-size:48px;
+
+    margin-bottom:70px;
+
+}
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.feature-card{
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:35px;
+
+    transition:.35s;
+
+    border:1px solid #EEE;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+}
+
+.feature-card h3{
+
+    font-size:24px;
+
+    margin-bottom:18px;
+
+}
+
+.feature-card p{
+
+    color:#666;
+
+    line-height:30px;
+
+}
+
+
+/* ===========================
+   Future
+=========================== */
+
+.future{
+
+    padding:120px 8%;
+
+    text-align:center;
+
+}
+
+.future h2{
+
+    font-size:50px;
+
+    margin-bottom:30px;
+
+}
+
+.future p{
+
+    max-width:900px;
+
+    margin:auto;
+
+    font-size:22px;
+
+    line-height:42px;
+
+    color:#666;
+
+}
+
+
+/* ===========================
+   Download
+=========================== */
+
+.download{
+
+    padding:120px 8%;
+
+    text-align:center;
+
+    background:#2C2C2C;
+
+    color:white;
+
+}
+
+.download h2{
+
+    font-size:52px;
+
+    margin-bottom:20px;
+
+}
+
+.download p{
+
+    color:#DDDDDD;
+
+    font-size:20px;
+
+    margin-bottom:40px;
+
+}
+
+.download .primary-btn{
+
+    background:white;
+
+    color:#2C2C2C;
+
+}
+
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+
+    padding:40px 8%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+.footer-links a{
+
+    text-decoration:none;
+
+    color:#666;
+
+}
+
+.footer-links a:hover{
+
+    color:#2C2C2C;
+
+}
+
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:950px){
+
+.hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.hero-content{
+
+    margin-bottom:70px;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+.hero h1{
+
+    font-size:54px;
+    line-height:62px;
+
+}
+
+.hero-phone img{
+
+    width:290px;
+
+}
+
+nav{
+
+    display:none;
+
+}
+
+footer{
+
+    flex-direction:column;
+    gap:20px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.hero h1{
+
+    font-size:42px;
+    line-height:50px;
+
+}
+
+.features h2,
+.future h2,
+.download h2{
+
+    font-size:34px;
+
+}
+
+.hero p,
+.future p,
+.download p{
+
+    font-size:17px;
+    line-height:30px;
+
+}
+
+.primary-btn,
+.secondary-btn{
+
+    width:100%;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+}
+
+}
